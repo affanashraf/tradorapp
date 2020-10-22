@@ -5,7 +5,7 @@ import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 function PartnerShip() {
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", display:"flex",flexDirection:"column", alignItems:"center" }}>
       <div className="partnership-title">
         <ScrollAnimation
           animateOnce={true}

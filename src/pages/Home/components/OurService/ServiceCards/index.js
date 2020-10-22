@@ -22,13 +22,12 @@ function ServiceCards() {
   const [items, goLeft, goRight] = useServiceButton();
   return (
     <div className="service-cards-container">
-      {AnimatedServiceCard(
+     
         <ServiceCard
           title="Service Name"
           desc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC."
           position={items.item_1}
         />
-      )}
       {AnimatedServiceCard(
         <ServiceCard
           title="Service Name"

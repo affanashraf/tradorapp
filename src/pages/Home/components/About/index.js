@@ -3,7 +3,9 @@ import "./About.css";
 import "font-awesome/css/font-awesome.min.css";
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import {useHistory} from "react-router-dom"
 function About() {
+  const history = useHistory()
   return (
     <div style={{ width: "1280px", height: "50vh", backgroundColor: "#fafafa" }}>
       <ScrollAnimation
@@ -56,7 +58,7 @@ function About() {
             </p>
           </ScrollAnimation>
 
-          <button className="read-more">
+          <button className="read-more" onClick={()=>history.push("/about")} >
             Read More
             <i
               style={{

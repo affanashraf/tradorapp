@@ -4,22 +4,20 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Team from "./components/Team";
 import OurService from "./components/OurService";
-import Pricing from "./components/Pricing"
-import PartnerShip from "./components/PartnerShip"
-import FAQ from "./components/FAQ"
+import Pricing from "./components/Pricing";
+import PartnerShip from "./components/PartnerShip";
+import FAQ from "./components/FAQ";
 
 function Home() {
-  
   return (
-    <div style={{width:"100%" , display:"flex", flexDirection:"column"}} >
-      <Header/>
-      <About/>
-      <Team/>
-     <OurService />
-
-      <Pricing/>
-      <PartnerShip/>
-      <FAQ/> 
+    <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+      <Header />
+      <About />
+      <Team />
+      <OurService />
+      <Pricing />
+      <PartnerShip />
+      <FAQ />
     </div>
   );
 }

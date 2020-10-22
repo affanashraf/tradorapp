@@ -4,8 +4,10 @@ import ArrowButton from "./components/ArrowButton";
 import PlayButton from "./components/PlayButton";
 import Poster from "./components/Poster";
 import "animate.css";
+import {useHistory} from "react-router-dom"
 
 function Header() {
+  const history = useHistory()
   return (
       <div className="item1">
         <div className="top-space"></div>
@@ -18,7 +20,7 @@ function Header() {
         <div className="topleft">
           <Poster />
           <div className="start-watch animate__animated animate__backInUp ">
-            <ArrowButton />
+            <ArrowButton onClick={()=>history.push("/login")} />
             <PlayButton />
           </div>
         </div>

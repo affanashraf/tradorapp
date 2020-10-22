@@ -3,12 +3,13 @@ import "./Login.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useHistory } from "react-router-dom"
 
 function Login() {
   function onChange(value) {
     console.log("Captcha value:", value);
   }
-
+  const history = useHistory()
   return (
     <div className="login-conatiner">
       <div className="login-logo-desc">
@@ -40,7 +41,7 @@ function Login() {
           animateIn="animate__slideInDown"
           duration="1"
         >
-          <div className="login-no-acount">Don't have account?</div>
+          <div className="login-no-acount" onClick={()=>history.push("/signup")} >Don't have account?</div>
         </ScrollAnimation>
       </div>
 
@@ -73,7 +74,7 @@ function Login() {
             </div>
 
             <ReCAPTCHA sitekey="Your client site key" onChange={onChange} />
-            <input type="submit" className="login-btn" value="Login"></input>
+            <input type="submit" className="login-btn" value="Login" onClick={()=>history.push("/")} ></input>
           </div>
         </ScrollAnimation>
       </div>

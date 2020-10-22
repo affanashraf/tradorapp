@@ -6,6 +6,8 @@ import Login from "../../pages/Login";
 import SignUp from "../../pages/SignUp";
 import AppBar from "../AppBar";
 import Footer from "../Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "../../routes"
 function App() {
   return (
     <div className="App">
@@ -13,7 +15,9 @@ function App() {
       <div className="App-header-space"></div>
 
       <div className="App-content">
-        <Home />
+        <Router>
+          <Routes/>
+        </Router>
       </div>
 
       <Footer />

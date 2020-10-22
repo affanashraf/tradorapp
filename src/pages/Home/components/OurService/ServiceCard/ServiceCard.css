@@ -54,7 +54,7 @@
 }
 .top {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   left: 170px;
 }
 /* Tablet View */
@@ -76,6 +76,9 @@
     height: 300px;
   }
 }
-/* Mobile View */
-@media only screen and (max-width: 600px) {
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .service-card{
+    margin: 20px;
+  }
 }

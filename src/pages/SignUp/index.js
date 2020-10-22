@@ -2,8 +2,9 @@ import React from "react";
 import "./SignUp.css";
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import {useHistory} from "react-router-dom"
 function SignUp() {
+  const history = useHistory()
   return (
     <div className="signup-conatiner">
       <div className="signup-logo-desc">
@@ -31,7 +32,7 @@ function SignUp() {
         </ScrollAnimation>
 
         <ScrollAnimation animateOnce={true} animateIn="animate__slideInDown" duration="1">
-          <div className="signup-no-acount">Already have an account</div>
+          <div className="signup-no-acount" onClick={()=>history.push("/login")} >Already have an account</div>
         </ScrollAnimation>
       </div>
       <div className="signup-form-container">
@@ -100,7 +101,7 @@ function SignUp() {
               </label>
             </div>
 
-            <input type="submit" className="signup-btn" value="Sign Up"></input>
+            <input type="submit" className="signup-btn" value="Sign Up" onClick={()=>history.push("/")} ></input>
           </ScrollAnimation>
         </div>
       </div>
