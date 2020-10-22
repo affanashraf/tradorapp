@@ -4,7 +4,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useHistory } from "react-router-dom"
-
 function Login() {
   function onChange(value) {
     console.log("Captcha value:", value);

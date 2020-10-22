@@ -11,6 +11,7 @@ import FAQ from "./components/FAQ";
 function Home() {
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+      {/* Components */}
       <Header />
       <About />
       <Team />

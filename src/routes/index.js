@@ -7,6 +7,7 @@ import React from "react";
 
 function Routes() {
   return (
+    //   Switch for switching in multiple pages
     <Switch>
       <Route path="/" exact >
         <Home />
@@ -20,6 +21,7 @@ function Routes() {
       <Route path="/about" exact >
         <About />
       </Route>
+      {/* For invalid route */}
       <Redirect to="/" />
     </Switch>
   );
