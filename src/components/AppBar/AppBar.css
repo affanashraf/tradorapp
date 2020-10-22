@@ -1,0 +1,58 @@
+.app-bar-container {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffa82b;
+  height: 70px;
+}
+.app-bar {
+  display: flex;
+  width: 1280px;
+  align-items: center;
+}
+.app-bar-logo {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+.app-bar-logo-container {
+  width: 50%;
+  display: flex;
+}
+.app-bar-link {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+.app-bar-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.app-bar-get-started {
+  border: 2px solid white;
+  border-radius: 5px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  background-color: initial;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+/* Tablet View (960px) */
+@media only screen and (max-width: 960px) {
+  .app-bar{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .app-bar-links-container{
+    width: 100%;
+  }
+  .app-bar-container {
+    height: 150px;
+  }
+  
+}

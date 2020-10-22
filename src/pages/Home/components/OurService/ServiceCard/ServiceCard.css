@@ -1,0 +1,81 @@
+.service-card {
+  background-color: white;
+  width: 300px;
+  height: 360px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.service-read-more {
+  font-family: "Jost", sans-serif;
+  color: #016a66;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.service-card-title {
+  font-family: "Jost", sans-serif;
+  color: #016a66;
+  font-size: larger;
+  font-weight: 700;
+}
+.service-card-desc {
+  font-family: "Jost", sans-serif;
+  color: #016a66;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.left {
+  position: absolute;
+  z-index: 1;
+  left: 70px;
+  top: 30px;
+  background-color: #f1f9ff;
+  width: 250px;
+  height: 300px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.right {
+  position: absolute;
+  z-index: 1;
+  left: 320px;
+  top: 30px;
+  background-color: #f1f9ff;
+  width: 250px;
+  height: 300px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.top {
+  position: absolute;
+  z-index: 2;
+  left: 170px;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .left {
+    position: static;
+    background-color: white;
+    left: auto;
+  }
+  .right {
+    position: static;
+    background-color: white;
+  }
+  .top {
+    position: static;
+  }
+  .service-card {
+    width: 250px;
+    height: 300px;
+  }
+}
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+}

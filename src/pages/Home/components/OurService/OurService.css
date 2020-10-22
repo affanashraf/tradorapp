@@ -1,0 +1,38 @@
+.service-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.service-header {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  color: #016a66;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 50px;
+  height: 20vh;
+}
+.service-body {
+    display: flex;
+}
+.service-cards {
+    width: 50%;
+    /* height: 70vh; */
+}
+.service-icon {
+    width: 100%;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .service-icon{
+    display: none;
+  }
+  .service-cards{
+    width: 100%;
+  }
+}

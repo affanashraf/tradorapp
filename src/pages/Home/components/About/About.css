@@ -1,0 +1,46 @@
+.about-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  color: #016a66;
+  font-size: 40px;
+  margin-left: 50px;
+}
+.about-txt {
+  /* width: 60%; */
+  color: #777777;
+  font-family: "jost";
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.read-more {
+  outline: none;
+  border: none;
+  background-color: #fafafa;
+  font-family: "Jost", sans-serif;
+  color: #016a66;
+  float: right;
+  margin: 50px;
+  cursor: pointer;
+}
+.about-icon {
+  float: right;
+  height: 40vh;
+}
+.about-parts {
+  display: flex;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .about-txt {
+    max-width: 960px;
+    margin: 0;
+  }
+  .about-parts {
+    flex-direction: column;
+  }
+  .about-icon {
+    display: none;
+  }
+}

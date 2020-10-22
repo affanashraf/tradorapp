@@ -1,0 +1,49 @@
+.arrowBtn {
+  font-size: small;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /*  */
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+  border: none;
+  color: #016a66;
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  margin: 10px;
+}
+.arrowBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.arrowBtn span:after {
+  content: "\2192";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.arrowBtn:hover span {
+  padding-right: 40px;
+}
+
+.arrowBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Tablet View (600px)*/
+@media only screen and (max-width: 960px) {
+  .arrowBtn{
+    width: 140px;
+    font-size: xx-small;
+  }
+}

@@ -1,0 +1,99 @@
+.pricing-card-container {
+  margin: 5px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 400px;
+  height: 600px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.pricing-card-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  color: #309dfb;
+  margin-top: 50px;
+}
+.pricing-card-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pricing-card-price {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  color: #309dfb;
+}
+.pricing-card-list {
+  font-family: "Jost", sans-serif;
+  color: #309dfb;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pricing-card-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  background-color: #fcbb5d;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 130px;
+  height: 50px;
+  margin: 10px;
+}
+.pricing-card-btn-outline {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fcbb5d;
+  color: #fcbb5d;
+  background-color: white;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 130px;
+  height: 50px;
+  margin: 10px;
+}
+.pricing-card-left {
+  background-color: #f1f9ff;
+  width: 300px;
+  height: 500px;
+}
+.pricing-card-right {
+  background-color: #f1f9ff;
+  width: 300px;
+  height: 500px;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .pricing-card-left{
+    background-color: white;
+  }
+  .pricing-card-right{
+    background-color: white;
+  }
+  .pricing-card-container{
+    width: 300px;
+    height: 500px;
+  }
+  .pricing-card-btn-outline{
+    border: none;
+    color: white;
+    background-color: #fcbb5d;
+  }
+}

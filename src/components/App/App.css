@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App-header-space{
+  height: 70px;
+}
+.App-content{
+  max-width: 1280px;
+}
+/* Tablet View (960px) */
+@media only screen and (max-width: 960px) {
+  
+  .App-header-space{
+    height: 150px;
+  }
+
+}

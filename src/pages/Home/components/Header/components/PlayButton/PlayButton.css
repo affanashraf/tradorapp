@@ -1,0 +1,28 @@
+.playBtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #016a66;
+  background-color: #fcbb5d;
+  font-size: xx-large;
+  font-size: small;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 200px;
+  margin: 10px;
+}
+.playBtn:hover {
+  background-color: #016a66;
+  color: #fcbb5d;
+  transition: 1s;
+  border-radius: 25px;
+}
+/* Tablet View (600px)*/
+@media only screen and (max-width: 960px) {
+  .playBtn {
+      width: 150px;
+  }
+}

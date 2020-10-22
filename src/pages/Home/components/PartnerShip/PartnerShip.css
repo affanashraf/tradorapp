@@ -1,0 +1,22 @@
+.partnership-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  color: #016a66;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 40px;
+  margin-left: 100px;
+  height: 35vh;
+}
+.partnership-logo {
+    width: 300px;
+}
+.partnership-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

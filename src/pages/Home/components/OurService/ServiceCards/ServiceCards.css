@@ -1,0 +1,39 @@
+.service-cards-container {
+  position: relative;
+  width: 100%;
+}
+
+.left-right-btn {
+  position: absolute;
+  z-index: 4;
+  top: 400px;
+  left: 250px;
+}
+.service-cards-container > i {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  font-size: 40px;
+  top: 380px;
+}
+
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .service-cards-container {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .service-cards-container > i {
+    display: none;
+  }
+}
+/* MOBILE View */
+@media only screen and (max-width: 600px) {
+  .service-cards-container {
+    flex-direction: column;
+  }
+}
+

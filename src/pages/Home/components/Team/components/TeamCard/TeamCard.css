@@ -1,0 +1,177 @@
+/* .team-card {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  padding-top: 25px;
+  -webkit-box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+}
+.team-card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-title {
+  font-family: "jost";
+  font-weight: 900;
+  font-size: 20px;
+  color: #187774;
+}
+.team-subtitle {
+  font-family: "jost";
+  color: #187774;
+  font-weight: 300;
+  font-size: 14px;
+}
+.team-txt {
+  text-align: center;
+  margin: 20px;
+  color: #187774;
+  font-family: "jost";
+  font-weight: 300;
+  font-size: 14px;
+}
+.team-bottom-txt {
+  font-family: "jost";
+  font-weight: 700;
+  font-size: 15px;
+  color: #2b837f;
+  cursor: pointer;
+}
+.team-img {
+  height: 15vh;
+  border-radius: 50%;
+} */
+/* Position */
+/* .team-card-top {
+  top: 5%;
+  position: absolute;
+  z-index: 9;
+  left: 37.5%;
+  background-color: white;
+}
+.team-card-middle {
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f9ff;
+  height: 50%;
+}
+.team-card-left {
+  left: 15%;
+  top: 10%;
+}
+.team-card-right {
+  left: 60%;
+  top: 10%;
+} */
+.team-card {
+  height: 500px;
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+
+  padding-top: 25px;
+  -webkit-box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.65);
+}
+.team-card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-img {
+  height: 15vh;
+  border-radius: 50%;
+}
+.team-card-title {
+  font-family: "jost";
+  font-weight: 900;
+  font-size: 20px;
+  color: #187774;
+}
+.team-card-subtitle {
+  font-family: "jost";
+  color: #187774;
+  font-weight: 300;
+  font-size: 14px;
+}
+.team-card-txt {
+  text-align: center;
+  margin: 20px;
+  color: #187774;
+  font-family: "jost";
+  font-weight: 300;
+  font-size: 14px;
+}
+.team-card-bottom-txt {
+  font-family: "jost";
+  font-weight: 700;
+  font-size: 15px;
+  color: #2b837f;
+  cursor: pointer;
+}
+.team-card-left {
+  position: absolute;
+  z-index: 1;
+  left: 240px;
+  top: 30px;
+  background-color: #f1f9ff;
+  width: 300px;
+  height: 450px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.team-card-right {
+  position: absolute;
+  z-index: 1;
+  left: 740px;
+  top: 30px;
+  background-color: #f1f9ff;
+  width: 300px;
+  height: 450px;
+  /* Shadow */
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+}
+.team-card-top {
+  position: absolute;
+  z-index: 5;
+  left: 465px;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .team-card-left {
+    position: static;
+    background-color: white;
+    left: auto;
+  }
+  .team-card-right {
+    position: static;
+    background-color: white;
+  }
+  .team-card-top {
+    position: static;
+  }
+  .team-card {
+    position: static;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    /* Shadow */
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+    box-shadow: 0px 0px 12px 1px rgba(196, 200, 207, 1);
+  }
+}

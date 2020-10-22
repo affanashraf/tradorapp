@@ -1,0 +1,41 @@
+.pricing-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.pricing-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  color: #016a66;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 40px;
+  margin-left: 100px;
+  height: 35vh;
+}
+.pricing-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pricing-btns {
+  display: flex;
+  justify-content: center;
+}
+/* Tablet View */
+@media only screen and (max-width: 960px) {
+  .pricing-cards{
+    flex-direction: column;
+  }
+  .pricing-btns{
+    display: none;
+  }
+}
